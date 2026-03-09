@@ -19,7 +19,7 @@ function verificarResposta() {
     let chute = document.querySelector('input').value;
 
     if (chute == numeroAleatorio) {
-        exibirTexto('h1', 'Parabéns, você acertou!')
+        exibirTexto('h1', 'Parabéns, você adivinhou o número secreto!')
         let palavraTentativas = tentativas > 1 ? 'tentativas' : 'tentativa'
         exibirTexto('p', `Você descobriu o número secreto em ${tentativas} ${palavraTentativas}.`);
         document.getElementById('reiniciar').removeAttribute('disabled');
