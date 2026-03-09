@@ -25,7 +25,7 @@ function verificarResposta() {
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else { tentativas++;
         limparCampo();
-        exibirTexto('h1', 'Você errou! Tente novamente');
+        exibirTexto('h1', 'Você errou! Tente outra vez');
         if (chute > numeroAleatorio){
             exibirTexto('p', `O número secreto é menor que ${chute}`);
         } else {
